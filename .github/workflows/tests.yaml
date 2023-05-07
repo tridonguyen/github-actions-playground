@@ -3,7 +3,12 @@ on:
   pull_request:
     branches:
       - "main"
-      - "!dev/"
+      - "!dev/**"
+    paths:
+      - "**"
+      - '!**/*.md'
+      - "!.github/**"
+      - "!.idea/**"
 
 jobs:
   run-tests:

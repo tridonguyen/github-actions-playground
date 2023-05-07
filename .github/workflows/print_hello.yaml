@@ -2,6 +2,11 @@ name: Print hello
 
 on:
   push:
+    paths:
+      - "**"
+      - '!**/*.md'
+      - "!.github/**"
+      - "!.idea/**"
 
 jobs:
   print-hello:
