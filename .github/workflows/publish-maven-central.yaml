@@ -22,10 +22,10 @@ jobs:
           java-version: '11'
 
       - name: Compile Java file
-        run: javac src/print_hello.java
+        run: javac src/HelloWorld.java
 
       - name: Run Java program
-        run: java -cp src print_hello
+        run: java -cp src HelloWorld
 
       - name: build project
         run: |
